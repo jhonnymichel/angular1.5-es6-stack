@@ -1,0 +1,27 @@
+{
+  "name": "angular1.5-es6-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonnymichel/angular1.5-es6-stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonnymichel/angular1.5-es6-stack/issues"
+  },
+  "homepage": "https://github.com/jhonnymichel/angular1.5-es6-stack#readme",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "webpack": "^1.13.3"
+  }
+}
