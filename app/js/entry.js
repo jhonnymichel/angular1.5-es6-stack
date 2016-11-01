@@ -1,5 +1,4 @@
 import angular from "angular";
-import MainController
 
 console.log("hello world");
 
