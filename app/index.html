@@ -6,9 +6,10 @@
   </head>
   <body ng-app="app">
   <div class="testing" ng-controller="homeController">
-    {{name}}
+    {{object}} {{getMessage()}}
+    <input ng-model="object" bg-bind="object"/>
+    <simple-title />
   </div>
-  <simple-title name="'simples teste'">
   <script type="text/javascript" src="./dist/js/bundle.js"></script>
   </body>
 </html>

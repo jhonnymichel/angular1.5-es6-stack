@@ -1,11 +1,28 @@
-import SimpleTitleController from "./simple-title-controller.js"
+import SimpleTitleController from "./simple-title-controller.js";
 
-export default function simpleTitle() {
+function simpleTitle($interval) {
+
   return {
     restrict: "E",
-    template: "<h1>Estou testando meu {{name}}</h1>",
-    scope: {
-      name: "="
-    },
+    template: "<h1>Estou testando meu {{object}}</h1>",
+    controller: ["$scope", SimpleTitleController],
+    scope: {},
+    link: (scope, element) => {
+      console.log(typeof $interval);
+      element.css({
+        "font-size" : "50px"
+      });
+      $interval(
+        () => {
+          scope.object = String(Math.round(Math.random() * 500));
+        },
+        1000,
+        10
+      );
+    }
   }
 }
+
+export default angular.module('app.simple-title', [])
+  .directive('simpleTitle', ["$interval", simpleTitle])
+  .name;

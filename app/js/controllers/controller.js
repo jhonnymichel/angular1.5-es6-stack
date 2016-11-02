@@ -2,7 +2,8 @@ export default class HomeController {
   constructor($scope) {
     this.$scope = $scope;
     this.$scope.name = "Olá mundo!"
-    this.test = "opa";
+    this.$scope.object = "This is another property";
+    this.$scope.getMessage = this.getMessage.bind(this);
   }
 
   getMessage() {
