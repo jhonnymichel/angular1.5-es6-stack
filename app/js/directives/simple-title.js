@@ -4,7 +4,7 @@ function simpleTitle($interval) {
 
   return {
     restrict: "E",
-    template: "<h1>Estou testando meu {{object}}</h1>",
+    template: require("./simple-title-template.html"),
     controller: ["$scope", SimpleTitleController],
     scope: {},
     link: (scope, element) => {
