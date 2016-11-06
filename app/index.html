@@ -6,9 +6,10 @@
   </head>
   <body ng-app="app">
   <div class="testing" ng-controller="homeController">
-    {{object}} {{getMessage()}}
-    <input ng-model="object" bg-bind="object"/>
-    <simple-title />
+    <h1>{{message}}</h1>
+    <h2>{{getMessage()}}</h2>
+    <input placeholder="Insert your name here" ng-model="object" bg-bind="object"/>
+    <simple-title name="object"></simple-title>
   </div>
   <script type="text/javascript" src="./dist/js/bundle.js"></script>
   </body>
