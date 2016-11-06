@@ -1,8 +1,14 @@
 {
   "extends": "eslint-config-google",
+  "parserOptions": {
+      "sourceType": "module",
+  },
   "rules": {
       "linebreak-style": "off",
-      "object-curly-spacing": ["error", "always"]
+      "object-curly-spacing": ["error", "always"],
+      "quotes": ["error", "double"],
+      "require-jsdoc": "off",
+      "comma-dangle": "off"
   },
   "env": {
       "browser": true
