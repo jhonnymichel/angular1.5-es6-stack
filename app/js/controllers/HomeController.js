@@ -1,8 +1,8 @@
 export default class HomeController {
   constructor($scope) {
     this.$scope = $scope;
-    this.$scope.message = "Hello, World"
-    this.$scope.getMessage = this.getMessage.bind(this);
+    //scope is injected this way, but really, avoid using scope with the controllerAs syntax.
+    this.message = "Hello, World"
   }
 
   getMessage() {
