@@ -1,4 +1,4 @@
-A boilerplate to use angular 1.5.x with ES6.
+A boilerplate to use angular 1.6.x with ES6.
 
 ## How to run
 
