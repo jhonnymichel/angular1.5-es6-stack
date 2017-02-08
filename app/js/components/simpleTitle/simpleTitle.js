@@ -1,7 +1,13 @@
-function SimpleTitleController($element) {
-  this.$onChanges = changes => {
-    console.log(changes);
-  };
+class SimpleTitleController {
+  constructor($element) {
+    this.$element = $element;
+  }
+  $onInit() {
+    console.log(this);
+  }
+  $onChanges(changes) {
+    console.log('this var changed:', changes);
+  }
 }
 
 const simpleTitle = {
@@ -10,10 +16,10 @@ const simpleTitle = {
       Sup, {{$ctrl.name}}! 
     </h1>
   `,
-  controller: SimpleTitleController,
   bindings: {
     name: '<',
   },
+  controller: SimpleTitleController,
 };
 
 export default angular.module('app.simple-title', [])
